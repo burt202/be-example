@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS todo_list_items (
+  id TEXT PRIMARY KEY,
+  item_text TEXT NOT NULL UNIQUE,
+  created_at TIMESTAMPTZ(3) NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ(3) NOT NULL DEFAULT NOW()
+);
