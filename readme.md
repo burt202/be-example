@@ -17,7 +17,7 @@ DB_USER=postgres
 ```
 
 - `npm ci`
-- `make up`
+- `npm run docker-up`
 - go to `http://localhost:8081/`
 - use REST client like Postman/Insomnia to call endpoints
   - `http://localhost:8081/v1/todo-list-items`
@@ -33,4 +33,4 @@ NOTE: on first launch you will need to log into the postgres container and creat
 
 ### Next Tasks
 
-- add update endpoint
+- add update/delete endpoint
